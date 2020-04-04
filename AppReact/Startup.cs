@@ -1,4 +1,6 @@
+using AppReact.Abstarct;
 using AppReact.Entities;
+using AppReact.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +35,8 @@ namespace AppReact
             services.AddIdentity<DbUser, DbRole>(options => options.Stores.MaxLengthForKeys = 128)
                .AddEntityFrameworkStores<ApplicationDbContext>()
                .AddDefaultTokenProviders();
+
+            services.AddTransient<IJWTTokenService, JWTTokenService>();
 
             var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration.GetValue<string>("SecretPhrase")));
 
@@ -108,6 +112,7 @@ namespace AppReact
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+            SeederDatabase.SeedData(app.ApplicationServices, env, Configuration);
         }
     }
 }

@@ -19,6 +19,7 @@ namespace AppReact.Controllers
         {
             return Ok(model);
         }
+
         [Authorize]
         [HttpPost("create")]
         public IActionResult AddModel([FromBody]AnimalViewModel tmp)
