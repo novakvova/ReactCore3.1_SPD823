@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Post from './homePage';
 
 const Home = props => (
   <div>
     <h1>Сайт новин COVID-19!</h1>
+    <Post/>
     <p>Welcome to your new single-page application, built with:</p>
     <ul>
       <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
