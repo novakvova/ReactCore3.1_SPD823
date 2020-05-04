@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./index.scss";
-// import Background from 'https://images.unsplash.com/photo-1493847242172-d46053a1f671?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f91dd5d50f16ba80af53a62d4caf2ce&auto=format&fit=crop&w=500&q=60';
+//import Background from 'https://images.unsplash.com/photo-1493847242172-d46053a1f671?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f91dd5d50f16ba80af53a62d4caf2ce&auto=format&fit=crop&w=500&q=60';
 
 class Post extends Component {
     state = {  }
@@ -9,7 +9,8 @@ class Post extends Component {
         <div>
             <h1>News</h1> 
                 <div className="card ">
-                    <div className="card-img" >
+                    <div className="card-img" style={{backgroundImage: 
+                    "url("+"https://images.unsplash.com/photo-1493847242172-d46053a1f671?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f91dd5d50f16ba80af53a62d4caf2ce&auto=format&fit=crop&w=500&q=60"+")"}}>
                         <div className="overlay">
                             <div className="overlay-content">
                                 <a className="hover" href="#!">View Project</a>
