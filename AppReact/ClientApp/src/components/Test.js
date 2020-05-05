@@ -19,7 +19,7 @@ class Test extends Component {
             {
                 id: 3,
                 name: "Бегемот",
-                image: "https://lh3.googleusercontent.com/proxy/fofoF9iK5mPDPgp2sbx_mutEJgvd7doHqLHrWvtWNUF-e3r0ONpr2-XouvXdzuArdqqztQlrs63y-5oAjBUFGpUIQ8Nvfq5dCGAhwbmPTDyQUUS7_gnzmmrw_MOzGgEvQtMHmezoJU9GA9JWMkdjEv-AShiXLqI",
+                image: "https://lh3.googleusercontent.com/proxy/qqniCG6y4Vk2sDHRPt9W1MwUjsGXE77aBBeP9jamjHFraX_lYsAM18iSYUJgpKcvJjwIvmXGtbnnkydj3XNy4RqRzrIr51d-YoFP0a7J3hZ04K9QWiecdZaplG7FXXrcixVrxVR6frVrJuUYgYr8UIoLJWVp_HA",
                 age: 5
             }
         ]
